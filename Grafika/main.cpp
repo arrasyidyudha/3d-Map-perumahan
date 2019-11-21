@@ -12,6 +12,7 @@ void keyboard(unsigned char, int, int);
 void resize(int, int);
 void house(float,float,float);
 void mall(float,float,float);
+void car(float,float,float);
 void circle1(float);
 
 float  h=5,h1=6,d1=4,g=1,g1=2;
@@ -311,6 +312,511 @@ glColor3f(1,1,1);
 	glEnd();
 }
 
+
+
+
+void car(float x,float y,float z)
+{
+
+
+
+    // top filling
+glBegin(GL_POLYGON);
+
+ glVertex3f(-0.1,0.6,0.7);//o
+ glVertex3f(-0.1,0.6,-0.7);//o'
+ glVertex3f(-1.02,0.6,-0.7);//p'
+ glVertex3f(-1.02,0.6,0.7);//p
+glEnd();
+
+
+glBegin(GL_POLYGON);
+ glVertex3f(-0.1,0.6,0.7);//o
+ glVertex3f(-0.1,0.6,-0.7);//o'
+ glVertex3f(.52,0.56,-0.7);//n'
+ glVertex3f(.52,0.56,0.7);//n
+glEnd();
+
+//back filling
+glBegin(GL_POLYGON);
+ glVertex3f(-1.2,0.22,0.7);//q
+ glVertex3f(-1.2,0.22,-0.7);//q'
+ glVertex3f(-1.2,-.28,-0.7);//r'
+ glVertex3f(-1.2,-.28,0.7);//r
+glEnd();
+
+
+
+
+
+
+glBegin(GL_POLYGON);
+ glVertex3f(1.52,.14,0.7);//k
+ glVertex3f(1.14,0.22,0.7);//l
+ glVertex3f(1.14,0.22,-0.7);//l'
+ glVertex3f(1.52,.14,-0.7);//k'
+glEnd();
+
+glBegin(GL_POLYGON);
+ glVertex3f(0.76,.22,0.7);//m
+ glVertex3f(0.76,.22,-0.7);//m'
+ glVertex3f(1.14,0.22,-0.7);//l'
+ glVertex3f(1.14,0.22,0.7);//l
+glEnd();
+
+glBegin(GL_POLYGON);
+ glVertex3f(-1.12,-.48,0.7);//a
+ glVertex3f(-0.86,-.48,0.7);//b
+ glVertex3f(-.74,-0.2,0.7);//c
+ glVertex3f(-0.64,0.22,0.7);//cc
+ glVertex3f(-1.08,0.22,0.7);//dd
+ glVertex3f(-1.2,0.22,0.7);//q
+ glVertex3f(-1.2,-.28,0.7);//r
+glEnd();
+
+glBegin(GL_POLYGON);
+glVertex3f(-.74,-0.2,0.7);//c
+glVertex3f(-0.64,0.22,0.7);//cc
+glVertex3f(-0.5,0.22,0.7);//hh
+glVertex3f(-0.5,-0.2,0.7);//pp
+glEnd();
+glBegin(GL_POLYGON);
+glVertex3f(0.0,0.22,0.7);//gg
+glVertex3f(1.14,0.22,0.7);//l
+glVertex3f(1.24,-.2,0.7);//h
+glVertex3f(0.0,-0.2,0.7);//oo
+
+
+
+glEnd();
+//
+glBegin(GL_POLYGON);
+
+ glVertex3f(-1.12,-.48,-0.7);//a'
+ glVertex3f(-0.86,-.48,-0.7);//b'
+ glVertex3f(-.74,-0.2,-0.7);//c'
+ glVertex3f(-0.64,0.22,-0.7);//cc'
+ glVertex3f(-1.08,0.22,-0.7);//dd'
+ glVertex3f(-1.2,0.22,-0.7);//q'
+ glVertex3f(-1.2,-.28,-0.7);//r'
+glEnd();
+
+glBegin(GL_POLYGON);
+
+glVertex3f(-.74,-0.2,-0.7);//c'
+glVertex3f(-0.64,0.22,-0.7);//cc'
+glVertex3f(-0.5,0.22,-0.7);//hh'
+glVertex3f(-0.5,-0.2,-0.7);//pp'
+
+glEnd();
+glBegin(GL_POLYGON);
+glVertex3f(0.0,0.22,-0.7);//gg'
+glVertex3f(1.14,0.22,-0.7);//l'
+glVertex3f(1.24,-.2,-0.7);//h'
+glVertex3f(0.0,-0.2,-0.7);//oo'
+
+glEnd();
+
+
+glBegin(GL_POLYGON);
+glVertex3f(-1.2,0.22,0.7);//q
+glVertex3f(-1.08,0.22,0.7);//dd
+glVertex3f(-0.98,0.5,0.7);//aa
+glVertex3f(-1.02,0.6,0.7);//p
+glEnd();
+
+
+glBegin(GL_POLYGON);
+glVertex3f(-1.02,0.6,0.7);//p
+glVertex3f(-0.98,0.5,0.7);//aa
+glVertex3f(0.44,0.5,0.7);//jj
+glVertex3f(.52,0.56,0.7);//n
+glVertex3f(-0.1,0.6,0.7);//0
+glEnd();
+
+glBegin(GL_POLYGON);
+glVertex3f(-0.64,0.5,0.7);//bb
+glVertex3f(-0.64,0.22,0.7);//cc
+glVertex3f(-0.5,0.22,0.7);//hh
+glVertex3f(-0.5,0.5,0.7);//ee
+glEnd();
+
+glBegin(GL_POLYGON);
+glVertex3f(0.0,0.5,0.7);//ff
+glVertex3f(0.0,0.22,0.7);//gg
+glVertex3f(0.12,0.22,0.7);//ll
+glVertex3f(0.12,0.5,0.7);//ii
+glEnd();
+
+glBegin(GL_POLYGON);
+glVertex3f(.52,0.56,0.7);//n
+glVertex3f(0.44,0.5,0.7);//jj
+glVertex3f(0.62,0.22,0.7);//kk
+glVertex3f(0.76,.22,0.7);//m
+glEnd();
+
+glBegin(GL_POLYGON);
+glVertex3f(-.42,-.2,0.7);//d
+glVertex3f(.94,-0.2,0.7);//g
+glVertex3f(.81,-0.48,0.7);//f
+glVertex3f(-0.3,-.48,0.7);//e
+glEnd();
+
+glBegin(GL_POLYGON);
+glVertex3f(1.14,0.22,0.7);//l
+glVertex3f(1.52,.14,0.7);//k
+glVertex3f(1.52,-.44,0.7);//j
+glVertex3f(1.38,-.48,0.7);//i
+glVertex3f(1.24,-.2,0.7);//h
+glEnd();
+
+glBegin(GL_POLYGON);
+glVertex3f(-1.2,0.22,-0.7);//q'
+glVertex3f(-1.08,0.22,-0.7);//dd'
+glVertex3f(-0.98,0.5,-0.7);//aa'
+glVertex3f(-1.02,0.6,-0.7);//p'
+glEnd();
+
+glBegin(GL_POLYGON);
+glVertex3f(-1.02,0.6,-0.7);//p'
+glVertex3f(-0.98,0.5,-0.7);//aa'
+glVertex3f(0.44,0.5,-0.7);//jj'
+glVertex3f(.52,0.56,-0.7);//n'
+glVertex3f(-0.1,0.6,-0.7);//0'
+glEnd();
+
+glBegin(GL_POLYGON);
+glVertex3f(-0.64,0.5,-0.7);//bb'
+glVertex3f(-0.64,0.22,-0.7);//cc'
+glVertex3f(-0.5,0.22,-0.7);//hh'
+glVertex3f(-0.5,0.5,-0.7);//ee'
+glEnd();
+
+glBegin(GL_POLYGON);
+glVertex3f(0.0,0.5,-0.7);//ff'
+glVertex3f(0.0,0.22,-0.7);//gg'
+glVertex3f(0.12,0.22,-0.7);//ll'
+glVertex3f(0.12,0.5,-0.7);//ii'
+glEnd();
+
+glBegin(GL_POLYGON);
+glVertex3f(.52,0.56,-0.7);//n'
+glVertex3f(0.44,0.5,-0.7);//jj'
+glVertex3f(0.62,0.22,-0.7);//kk'
+glVertex3f(0.76,.22,-0.7);//m'
+glEnd();
+
+glBegin(GL_POLYGON);
+glVertex3f(-.42,-.2,-0.7);//d'
+glVertex3f(.94,-0.2,-0.7);//g'
+glVertex3f(.81,-0.48,-0.7);//f'
+glVertex3f(-0.3,-.48,-0.7);//e'
+glEnd();
+
+glBegin(GL_POLYGON);
+glVertex3f(1.14,0.22,-0.7);//l'
+glVertex3f(1.52,.14,-0.7);//k'
+glVertex3f(1.52,-.44,-0.7);//j'
+glVertex3f(1.38,-.48,-0.7);//i'
+glVertex3f(1.24,-.2,-0.7);//h'
+glEnd();
+
+
+// door1 body- rear, near
+glBegin(GL_POLYGON);
+glVertex3f(-0.5,0.22,0.7);//hh
+glVertex3f(0.0,0.22,0.7);//gg
+glVertex3f(0.0,-0.2,0.7);//oo
+glVertex3f(-0.5,-0.2,0.7);//pp
+glEnd();
+
+// door body- rear, far
+glBegin(GL_POLYGON);
+glVertex3f(-0.5,0.22,-0.7);//hh'
+glVertex3f(0.0,0.22,-0.7);//gg'
+glVertex3f(0.0,-0.2,-0.7);//oo'
+glVertex3f(-0.5,-0.2,-0.7);//pp'
+glEnd();
+
+// door2  body- near, driver
+
+glBegin(GL_POLYGON);
+glVertex3f(0.12,0.22,0.7);//ll
+glVertex3f(0.62,0.22,0.7);//kk
+glVertex3f(0.62,-0.2,0.7);//mm
+glVertex3f(0.12,-0.2,0.7);//nn
+glEnd();
+
+
+
+// door2  body- far, driver
+
+glBegin(GL_POLYGON);
+ glVertex3f(0.12,0.22,-0.7);//ll'
+glVertex3f(0.62,0.22,-0.7);//kk'
+glVertex3f(0.62,-0.2,-0.7);//mm'
+glVertex3f(0.12,-0.2,-0.7);//nn'
+glEnd();
+
+glBegin(GL_POLYGON);//front**
+ glVertex3f(1.52,.14,0.7);//k
+ glVertex3f(1.52,.14,-0.7);//k'
+ glVertex3f(1.52,-.44,-0.7);//j'
+ glVertex3f(1.52,-.44,0.7);//j
+glEnd();
+
+glTranslatef(-.58,-.52,0.7);//translate to 1st tyre
+glColor3f(0.09,0.09,0.09);// tyre color********
+glutSolidTorus(0.12f, .14f, 10, 25);
+glTranslatef(1.68,0.0,0.0);//translate to 2nd tyre
+glutSolidTorus(0.12f, .14f, 10, 25);
+
+glTranslatef(0.0,0.0,-1.4);//translate to 3rd tyre
+glutSolidTorus(0.12f, .14f, 10, 25);
+glTranslatef(-1.68,0.0,0.0);//translate to 4th tyre which is behind 1st tyre i.e rear .back
+glutSolidTorus(0.12f, .14f, 10, 25);
+glTranslatef(.58,.52,0.7);//translate to origin
+glRotatef(90.0,0.0,1.0,0.0);
+glTranslatef(0.0,0.0,-1.40);
+
+glutSolidTorus(0.2f, .2f, 10, 25);
+
+glTranslatef(0.0,0.0,1.40);
+glRotatef(270.0,0.0,1.0,0.0);
+
+
+//bottom filling
+glBegin(GL_POLYGON);
+glColor3f(0.25,0.25,0.25);
+ glVertex3f(-0.3,-.48,0.7);//e
+ glVertex3f(-0.3,-.48,-0.7);//e'
+ glVertex3f(.81,-0.48,-0.7);//f'
+ glVertex3f(.81,-0.48,0.7);//f
+glEnd();
+
+
+
+
+glBegin(GL_POLYGON);
+ glVertex3f(-.42,-.2,0.7);//d
+ glVertex3f(-.42,-.2,-0.7);//d'
+ glVertex3f(-0.3,-.48,-0.7);//e'
+ glVertex3f(-0.3,-.48,0.7);//e
+glEnd();
+
+glBegin(GL_POLYGON);
+
+glVertex3f(-1.2,-.28,0.7);//r
+glVertex3f(-1.2,-.28,-0.7);//r'
+glVertex3f(-1.12,-.48,-0.7);//a'
+glVertex3f(-1.12,-.48,0.7);//a
+
+glEnd();
+
+glBegin(GL_POLYGON);
+ glVertex3f(-1.12,-.48,0.7);//a
+ glVertex3f(-1.12,-.48,-0.7);//a'
+ glVertex3f(-0.86,-.48,-0.7);//b'
+ glVertex3f(-0.86,-.48,0.7);//b
+glEnd();
+
+glBegin(GL_POLYGON);
+ glVertex3f(-0.86,-.48,0.7);//b
+ glVertex3f(-0.86,-.48,-0.7);//b'
+ glVertex3f(-.74,-0.2,-0.7);//c'
+ glVertex3f(-.74,-0.2,0.7);//c
+glEnd();
+
+glBegin(GL_POLYGON);
+ glVertex3f(-.74,-0.2,0.7);//c
+ glVertex3f(-.74,-0.2,-0.7);//c'
+ glVertex3f(-.42,-.2,-0.7);//d'
+ glVertex3f(-.42,-.2,0.7);//d
+glEnd();
+
+glBegin(GL_POLYGON);
+ glVertex3f(.81,-0.48,0.7);//f
+ glVertex3f(.81,-0.48,-0.7);//f'
+ glVertex3f(.94,-0.2,-0.7);//g'
+ glVertex3f(.94,-0.2,0.7);//g
+glEnd();
+
+glBegin(GL_POLYGON);
+ glVertex3f(.94,-0.2,0.7);//g
+ glVertex3f(.94,-0.2,-0.7);//g'
+ glVertex3f(1.24,-.2,-0.7);//h'
+ glVertex3f(1.24,-.2,0.7);//h
+glEnd();
+
+glBegin(GL_POLYGON);
+ glVertex3f(1.24,-.2,0.7);//h
+ glVertex3f(1.24,-.2,-0.7);//h'
+ glVertex3f(1.38,-.48,-0.7);//i'
+ glVertex3f(1.38,-.48,0.7);//i
+glEnd();
+
+glBegin(GL_POLYGON);
+ glVertex3f(1.38,-.48,0.7);//i
+ glVertex3f(1.38,-.48,-0.7);//i'
+ glVertex3f(1.52,-.44,-0.7);//j'
+ glVertex3f(1.52,-.44,0.7);//j
+glEnd();
+
+
+
+
+//********************************************************************************************8
+
+
+// door outline- rear, front
+glBegin(GL_LINE_LOOP);
+glColor3f(1.0,1.0,1.0);
+glVertex3f(-0.5,0.22,0.7);//hh
+glVertex3f(0.0,0.22,0.7);//gg
+glVertex3f(0.0,-0.2,0.7);//oo
+glVertex3f(-0.5,-0.2,0.7);//pp
+
+
+glEnd();
+
+
+
+// door2 outline- near, driver
+
+glBegin(GL_LINE_LOOP);
+
+glVertex3f(0.12,0.22,0.7);//ll
+glVertex3f(0.62,0.22,0.7);//kk
+glVertex3f(0.62,-0.2,0.7);//mm
+glVertex3f(0.12,-0.2,0.7);//nn
+glEnd();
+
+
+glColor3f(0.0,0.0,0.0);
+// door2  outline- far, driver
+
+glBegin(GL_LINE_LOOP);
+
+glVertex3f(0.12,0.22,-0.7);//ll'
+glVertex3f(0.62,0.22,-0.7);//kk'
+glVertex3f(0.62,-0.2,-0.7);//mm'
+glVertex3f(0.12,-0.2,-0.7);//nn'
+glEnd();
+
+// door outline- rear, far
+glBegin(GL_LINE_LOOP);
+
+glVertex3f(-0.5,0.22,-0.7);//hh'
+glVertex3f(0.0,0.22,-0.7);//gg'
+glVertex3f(0.0,-0.2,-0.7);//oo'
+glVertex3f(-0.5,-0.2,-0.7);//pp'
+
+
+glEnd();
+glBegin(GL_POLYGON);//front**
+glVertex3f(1.52,.14,0.7);//k
+glVertex3f(1.52,.14,-0.7);//k'
+glVertex3f(1.52,-.44,-0.7);//j'
+glVertex3f(1.52,-.44,0.7);//j
+
+glEnd();
+
+glColor3f(0.0,0.0,1.0);
+
+// transparent objects are placed next ..
+
+ glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);//TRANCPARENCY3
+
+//windscreen
+ glBegin(GL_POLYGON);
+glColor4f(0.0,0.0,0.0,0.7);   //COLOR =WHITE TRANSPARENT
+ glVertex3f(0.562,.5,.6);//AAA
+ glVertex3f(.562,.5,-.6);//AAA'
+ glVertex3f(.76,.22,-.6);//MMM'
+ glVertex3f(.76,.22,.6);//MMM
+
+glEnd();
+//rear window
+glBegin(GL_POLYGON);
+   //COLOR =WHITE TRANSPARENT
+
+ glVertex3f(-1.068,0.5,0.6);//pp
+ glVertex3f(-1.068,0.5,-0.6);//pp'
+ glVertex3f(-1.2,0.22,-0.6);//qq'
+ glVertex3f(-1.2,0.22,0.6);//qq
+
+glEnd();
+//leftmost window front
+glBegin(GL_POLYGON);
+ glVertex3f(-0.98,0.5,0.7);//aa
+ glVertex3f(-0.64,0.5,0.7);//bb
+ glVertex3f(-0.64,0.22,0.7);//cc
+ glVertex3f(-1.08,0.22,0.7);//dd
+glEnd();
+
+//leftmost window back
+glBegin(GL_POLYGON);
+
+ glVertex3f(-0.98,0.5,-0.7);//aa
+ glVertex3f(-0.64,0.5,-0.7);//bb
+ glVertex3f(-0.64,0.22,-0.7);//cc
+ glVertex3f(-1.08,0.22,-0.7);//dd
+glEnd();
+
+//middle window front
+
+glBegin(GL_POLYGON);
+
+glVertex3f(-0.5,0.5,0.7);
+glVertex3f(0.0,0.5,0.7);
+glVertex3f(0.0,0.22,0.7);
+glVertex3f(-0.5,0.22,0.7);
+
+glEnd();
+
+
+
+
+//middle window back
+
+glBegin(GL_POLYGON);
+
+glVertex3f(-0.5,0.5,-0.7);
+glVertex3f(0.0,0.5,-0.7);
+glVertex3f(0.0,0.22,-0.7);
+glVertex3f(-0.5,0.22,-0.7);
+
+glEnd();
+//rightmost window front
+
+glBegin(GL_POLYGON);
+
+glVertex3f(0.12,0.5,0.7);//ii
+glVertex3f(0.44,0.5,0.7);//jj
+glVertex3f(0.62,0.22,0.7);//kk
+glVertex3f(0.12,0.22,0.7);//ll
+
+
+glEnd();
+
+
+//rightmost window back
+
+glBegin(GL_POLYGON);
+
+glVertex3f(0.12,0.5,-0.7);//ii'
+glVertex3f(0.44,0.5,-0.7);//jj'
+glVertex3f(0.62,0.22,-0.7);//kk'
+glVertex3f(0.12,0.22,-0.7);//ll'
+
+
+glEnd();
+
+
+////car code ends here
+glColor3f(0.0,0.0,1.0);
+}
+
 // pengatur posisi rumah
 
 void house1()
@@ -349,6 +855,10 @@ void house1()
     mall(80,0,-90);
 
     mall(100,0,-120);
+
+    car(60,0,-90);
+    car(40,0,60);
+
 
 
 
